@@ -65,12 +65,10 @@ int main()
 			if (no >= 4) {
 				vector<string> card;
 				for (string i : {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"}) {
-					for (string j : { "P", "C", "T", "D" }) {
+					for (string j : { "S", "H", "D", "C" }) {
 						card.push_back(i + j);
 					}
 				}
-				cout << "card size: " << card.size() << endl;
-
 				for (int i = 0; i < no; i++) {
 					string txt = "you get card:";
 					for (int j = 0; j < 13; j++) {
