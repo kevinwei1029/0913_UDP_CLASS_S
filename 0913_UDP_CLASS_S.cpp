@@ -78,6 +78,7 @@ int main()
 						txt += card[r] + " ";
 						card.erase(card.begin() + r);
 					}
+					cout << "user" << i+1 << ">" << txt << endl;
 					sendto(SSock, txt.c_str(), txt.size(), 0, (sockaddr*)&Addr[i], Len);
 				}
 			}
